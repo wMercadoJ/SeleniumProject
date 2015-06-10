@@ -34,6 +34,10 @@ public class MainPage {
     @FindBy(linkText = "Leads")
     WebElement leadsTabLink;
 
+
+    @FindBy(linkText = "Opportunities")
+    WebElement opportunitiesLink;
+
     public MainPage(WebDriver driver){
         this.driver = driver;
         this.wait = DriverManager.getInstance().getWait();
@@ -64,6 +68,20 @@ public class MainPage {
         return new LeadsTab(this.driver);
     }
 
+    /**
+     * This method returns an instance from OpportunitiesTab
+     *
+     * @author: Jimmy Vargas
+     * @version: 1.0
+     * @since: 6/10/2015
+     * */
+    public OpportunitiesTab gotoOpportunitiesTab(){
+        wait.until(ExpectedConditions.elementToBeClickable(opportunitiesLink));
+        opportunitiesLink.click();
+
+        return new OpportunitiesTab(this.driver);
+
+    }
 
 
 
