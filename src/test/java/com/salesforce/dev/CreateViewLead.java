@@ -80,7 +80,7 @@ public class CreateViewLead {
     @AfterMethod
     public void tearDown(){
         leadsTab.deleteView(viewName);
-        DriverManager.getInstance().quit();
+        //DriverManager.getInstance().quit();
     }
 
 }

@@ -32,3 +32,22 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
 }
+
+
+task runTestNGTestCases(type: Test) {
+
+    useTestNG()
+
+    testLogging {
+        events "started", "passed", "failed", "skipped"
+    }
+
+    options {
+        suites(suites)
+    }
+
+    systemProperties.put('primaryUserName', primaryUserName)
+    systemProperties.put('primaryUserPassword', primaryUserPassword)
+    systemProperties.put('browser',browser)
+}
+
