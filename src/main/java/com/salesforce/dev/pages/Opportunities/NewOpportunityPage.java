@@ -1,4 +1,4 @@
-package com.salesforce.dev.pages;
+package com.salesforce.dev.pages.Opportunities;
 
 import com.salesforce.dev.framework.DriverManager;
 import org.openqa.selenium.WebDriver;

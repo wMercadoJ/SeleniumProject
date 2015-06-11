@@ -1,6 +1,7 @@
-package com.salesforce.dev.pages;
+package com.salesforce.dev.pages.Home;
 
 import com.salesforce.dev.framework.DriverManager;
+import com.salesforce.dev.pages.CreateTaskPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;

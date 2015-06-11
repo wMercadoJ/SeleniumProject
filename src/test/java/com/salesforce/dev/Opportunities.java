@@ -1,6 +1,9 @@
 package com.salesforce.dev;
 
 import com.salesforce.dev.pages.*;
+import com.salesforce.dev.pages.Opportunities.NewOpportunityPage;
+import com.salesforce.dev.pages.Opportunities.OpportunitiesTab;
+import com.salesforce.dev.pages.Opportunities.OpportunityPage;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,9 +34,10 @@ public class Opportunities {
     public void CreateOpportunity(){
 
         OpportunitiesTab opTab = mainPage.gotoOpportunitiesTab();
+        //opTab.selectViewByVisibleText("New This Week");
 
         //small piece for all test case
-        NewOpportunityPage newOpPage = opTab.clickNewBtn();
+        NewOpportunityPage newOpPage = (NewOpportunityPage)opTab.clickNewBtn();
 
         newOpPage.setOpportunityName(opportunityName);
         newOpPage.setCloseDate();

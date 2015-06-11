@@ -25,17 +25,14 @@ package com.salesforce.dev;
 
  */
 
-import com.salesforce.dev.framework.DriverManager;
 import com.salesforce.dev.pages.CreateNewViewPage;
 import com.salesforce.dev.pages.HomePage;
-import com.salesforce.dev.pages.LeadsTab;
+import com.salesforce.dev.pages.Leads.LeadsTab;
 import com.salesforce.dev.pages.MainPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.sql.Driver;
 
 public class CreateViewLead {
 

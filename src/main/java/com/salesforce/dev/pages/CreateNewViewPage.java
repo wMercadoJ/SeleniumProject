@@ -1,6 +1,7 @@
 package com.salesforce.dev.pages;
 
 import com.salesforce.dev.framework.DriverManager;
+import com.salesforce.dev.pages.Leads.LeadsTab;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
